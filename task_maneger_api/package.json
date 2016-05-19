@@ -1,0 +1,14 @@
+{
+  "name": "task_maneger_api",
+  "version": "1.0.0",
+  "description": "API for task manegement",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js"
+  },
+  "author": "Francisco Ioneiton",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "express": "^4.13.4"
+  }
+}
