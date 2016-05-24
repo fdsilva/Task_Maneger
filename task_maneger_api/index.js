@@ -5,10 +5,11 @@ import consingn from "consign";
 
 const app = express();
 //Formating json 
-app.set("json spaces", 4);
+//app.set("json spaces", 4);
 
 consingn()
-	.include("models")
+	.include("libs/config.js")
+	.then("db.js")
 	.then("libs/middlewares.js")
 	.then("routes")
 	.then("libs/boot.js")

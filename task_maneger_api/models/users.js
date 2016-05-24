@@ -1,9 +1,9 @@
 module.exports = (sequelize, DataType) => {
 	const Users = sequelize.define("Users", {
 		id: {
-			type: DataType.INTEGER,	
+			type: DataType.INTEGER,
 			primaryKey: true,
-			autoIncrement: true
+			autoIncrement:true
 		},
 		name: {
 			type: DataType.STRING,
@@ -14,18 +14,18 @@ module.exports = (sequelize, DataType) => {
 		},
 		email: {
 			type: DataType.STRING,
-			unique:true,
+			unique: true,
 			allowNull: false,
 			validate: {
 				notEmpty: true
 			}
 		}
-	},{
-		classMethods: {
-			associate: (models) =>{
-				Users.hasMany(models.Tasks);
-			}
-		}
+	  }, {
+	  	classMethods: {
+	  		associate: (models) => {
+	  			Users.hasMany(models.Tasks);
+	  		}
+	  	}
 	});
 	return Users;
 };
