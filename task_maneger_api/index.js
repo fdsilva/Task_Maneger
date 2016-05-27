@@ -15,15 +15,3 @@ consingn()
 	.then("routes")
 	.then("libs/boot.js")
 	.into(app);
-//app.get("/", (req, res) => res.json({starus: "Task_MAneger_API"}));
-/*
-app.get("/tasks", (req, res) =>{
-	res.json({
-		tasks: [
-		{title: "By a car"},
-		{title: "feed the cat"},
-		]
-	});
-});
-*/
-//app.listen(PORT, () => console.log(`Task_Maneger_API -Port ${PORT}`));
