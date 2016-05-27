@@ -8,5 +8,7 @@ module.exports = {
 		define: {
 			underscored: true
 		}
-	}
+	},
+	jwtSecret: "Ta$k-ManegeR", //string key
+	jwtSession: {session: false}
 };
