@@ -10,5 +10,5 @@ module.exports = {
 		}
 	},
 	jwtSecret: "Ta$k-ManegeR", //string key
-	jwtSession: {session: false}
+	jwtSession: {session: false}// inform to passport that autenticattion whont have user session 
 };
