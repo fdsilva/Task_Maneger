@@ -7,7 +7,7 @@ const app = express();
 //Formating json 
 //app.set("json spaces", 4);
 
-consingn({verbose: false})
+consingn()
 	.include("libs/config.js")
 	.then("db.js")
 	.then("auth.js")
@@ -16,4 +16,4 @@ consingn({verbose: false})
 	.then("libs/boot.js")
 	.into(app);
 
-module.exports = app;
+//module.exports = app;
