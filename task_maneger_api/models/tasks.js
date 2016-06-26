@@ -2,7 +2,7 @@ module.exports = (sequelize, DataType) => {
 	const Tasks = sequelize.define("Tasks", {
 		id: {
 			type: DataType.INTEGER,
-			primaryKey:true,
+			primaryKey: true,
 			autoIncrement: true
 		},
 		title: {
@@ -17,12 +17,12 @@ module.exports = (sequelize, DataType) => {
 			allowNull: false,
 			defaultValue: false
 		}
-	  }, {
-	  	classMethods: {
-	  		associate: (models) => {
-	  			Tasks.belongsTo(models.Users);
-	  		}
-	  	}
+	},{
+		classMethods: {
+			associate: (models) => {
+				Tasks.belongsTo(models.Users);
+			}
+		}
 	});
 	return Tasks;
 };
